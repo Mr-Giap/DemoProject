@@ -35,6 +35,7 @@ namespace Demo2
                     thongtinnv tt = new thongtinnv();
                     tt.maNV = item.maNV;
                     tt.tenNV = item.tenNV;
+                    tt.gioOT = item.gioOT;
                     if (item.gioOT > 0)
                     {
                         tt.luongthuclinh = (float)(item.luongcb+(item.gioOT * 200000));

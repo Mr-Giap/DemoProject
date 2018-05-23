@@ -23,8 +23,6 @@ namespace Demo2
             //tester
             Console.Write("\nXin nhap vao so nv tester: ");
             int nvtest = int.Parse(Console.ReadLine());
-            Console.Write("\nXin nhap vao luong co ban cua tester: ");
-            float luongcbtest = float.Parse(Console.ReadLine());
             // kiểm tra số lượng nhâp vào
             if (nvpro > 0)
             {
@@ -54,6 +52,9 @@ namespace Demo2
             }
             if(nvtest > 0)
             {
+                //so luong cb
+                Console.Write("\nXin nhap vao luong co ban cua tester: ");
+                float luongcbtest = float.Parse(Console.ReadLine());
                 //thong tin co ban
                 Console.WriteLine("====================================");
                 Console.WriteLine("Nhap thong tin co ban cua cac tester");
@@ -81,8 +82,9 @@ namespace Demo2
                 Console.WriteLine("====================================");
                 Console.WriteLine("Day la thong tin nv co gio OT lon nhat: ");
                 Console.Write("\nMa nv: " + maxtime.maNV);
-                Console.Write("          Ten nv: " + maxtime.tenNV);
-                Console.Write("          Luong thuc linh: " + maxtime.luongthuclinh);
+                Console.Write("     Ten nv: " + maxtime.tenNV);
+                Console.Write("     So gio OT: " + maxtime.gioOT);
+                Console.Write("     Luong thuc linh: " + maxtime.luongthuclinh);
                 Console.ReadKey();
             }
             //Console.WriteLine("====================================");
@@ -92,7 +94,7 @@ namespace Demo2
             //Console.Write("\nMa nv: " + maxtime.maNV);
             //Console.Write("          Ten nv: " + maxtime.tenNV);
             //Console.Write("          Luong thuc linh: " + maxtime.luongthuclinh);
-            Console.ReadKey();
+            //Console.ReadKey();
 
 
         }
