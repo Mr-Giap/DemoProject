@@ -6,33 +6,34 @@ using System.Threading.Tasks;
 
 namespace Demo2
 {
-    public class Tester : Nhanvien<thongtinnv>
+    public class Tester : Nhanvien<thongtinnvtest>
     {
-        public override List<thongtinnv> thongtinnhanvien(float? luongcb,int n)
+        public override List<thongtinnvtest> thongtinnhanvien(float? luongcb,int n)
         {
-            List<thongtinnv> list = new List<thongtinnv>();
+            List<thongtinnvtest> list = new List<thongtinnvtest>();
             for (int i = 0; i < n; i++)
             {
-                thongtinnv tt = new thongtinnv();
-                Console.Write("\nXin nhap ma nv: ");
+                thongtinnvtest tt = new thongtinnvtest();
+                Console.Write("\nXin nhap ma nv "+(i+1)+ " :");
                 tt.maNV = int.Parse(Console.ReadLine());
                 Console.Write("\nXin nhap ten nv: ");
                 tt.tenNV = (string)(Console.ReadLine());
                 Console.Write("\nXin nhap so gio OT: ");
                 tt.gioOT = int.Parse(Console.ReadLine());
                 tt.luongcb = (float)luongcb;
+                Console.WriteLine("+++++++++++++++++++++");
                 list.Add(tt);
             }
             return list;
         }
-        public override List<thongtinnv> luonghangthang(List<thongtinnv> a)
+        public override List<thongtinnvtest> luonghangthang(List<thongtinnvtest> a)
         {
-            List<thongtinnv> list = new List<Demo2.thongtinnv>();
+            List<thongtinnvtest> list = new List<Demo2.thongtinnvtest>();
             if(a != null)
             {
                 foreach (var item in a)
                 {
-                    thongtinnv tt = new thongtinnv();
+                    thongtinnvtest tt = new thongtinnvtest();
                     tt.maNV = item.maNV;
                     tt.tenNV = item.tenNV;
                     tt.gioOT = item.gioOT;

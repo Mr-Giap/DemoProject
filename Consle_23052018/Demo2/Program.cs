@@ -14,7 +14,7 @@ namespace Demo2
             // khai báo biến số lượng nhân có lỗi lớn hơn 5.
             int loiit = 0;
             // khai báo nhân viên có số giờ over time lớn nhất
-            thongtinnv maxtime = new thongtinnv();
+            thongtinnvtest maxtime = new thongtinnvtest();
             maxtime.gioOT = 0;
             // nhập n số nhân viên và gán vào biến
             // programer
@@ -29,7 +29,7 @@ namespace Demo2
                 // thong tin cb
                 Console.WriteLine("====================================");
                 Console.WriteLine("Nhap thong tin co ban cua cac programer");
-                List<thongtinnv> prolist = new Programmer().thongtinnhanvien(null, nvpro);
+                List<thongtinnvpro> prolist = new Programmer().thongtinnhanvien(null, nvpro);
                 var luongpro = new Programmer().luonghangthang(prolist);
                 // tinh tien luong
                 Console.WriteLine("====================================");
@@ -58,7 +58,7 @@ namespace Demo2
                 //thong tin co ban
                 Console.WriteLine("====================================");
                 Console.WriteLine("Nhap thong tin co ban cua cac tester");
-                List<thongtinnv> testlist = new Tester().thongtinnhanvien(luongcbtest, nvtest);
+                List<thongtinnvtest> testlist = new Tester().thongtinnhanvien(luongcbtest, nvtest);
                 var luongtest = new Tester().luonghangthang(testlist);
                 // tinh tien luong
                 Console.WriteLine("====================================");

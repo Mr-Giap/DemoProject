@@ -47,7 +47,8 @@
     <Compile Include="Programmer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tester.cs" />
-    <Compile Include="thongtinnv.cs" />
+    <Compile Include="thongtinnvtest.cs" />
+    <Compile Include="thongtinnvpro.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

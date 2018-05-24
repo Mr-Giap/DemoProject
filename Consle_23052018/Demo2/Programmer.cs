@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Demo2
 {
-    public class Programmer : Nhanvien<thongtinnv>
+    public class Programmer : Nhanvien<thongtinnvpro>
     {
-        public override List<thongtinnv> thongtinnhanvien(float? luongcb, int n)
+        public override List<thongtinnvpro> thongtinnhanvien(float? luongcb, int n)
         {
-            List<thongtinnv> list = new List<thongtinnv>();
+            List<thongtinnvpro> list = new List<thongtinnvpro>();
             for (int i = 0; i < n; i++)
             {
 
-                thongtinnv tt = new thongtinnv();
-                Console.Write("\nXin nhap ma nv "+i+": ");
+                thongtinnvpro tt = new thongtinnvpro();
+                Console.Write("\nXin nhap ma nv "+(i + 1)+ ": ");
                 tt.maNV = int.Parse(Console.ReadLine());
                 Console.Write("\nXin nhap ten nv: ");
                 tt.tenNV = (string)(Console.ReadLine());
@@ -28,14 +28,15 @@ namespace Demo2
             }
             return list;
         }
-        public override List<thongtinnv> luonghangthang(List<thongtinnv> a)
+        
+        public override List<thongtinnvpro> luonghangthang(List<thongtinnvpro> a)
         {
-            List<thongtinnv> list = new List<Demo2.thongtinnv>();
+            List<thongtinnvpro> list = new List<thongtinnvpro>();
             if(a != null)
             {
                 foreach (var item in a)
                 {
-                    thongtinnv tt = new thongtinnv();
+                    thongtinnvpro tt = new thongtinnvpro();
                     tt.maNV = item.maNV;
                     tt.tenNV = item.tenNV;
                     tt.soloi = item.soloi;
