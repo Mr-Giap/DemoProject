@@ -13,7 +13,7 @@ namespace Demo2
             List<thongtinnvpro> list = new List<thongtinnvpro>();
             for (int i = 0; i < n; i++)
             {
-
+                String
                 thongtinnvpro tt = new thongtinnvpro();
                 Console.Write("\nXin nhap ma nv "+(i + 1)+ ": ");
                 tt.maNV = int.Parse(Console.ReadLine());
